@@ -14,11 +14,11 @@ module GoogleReaderApi
     #
     # [:password] the user's password for login purposes
     #
-    # [:auth]  the auth token you got from a previous authentication request
+    # [:auth_token]  the auth token you got from a previous authentication request
     #          if you provide this you do not need to provide the email and password
     def initialize(options)
-      if options[:auth]
-        @auth = options[:auth]
+      if options[:auth_token]
+        @auth = options[:auth_token]
       else
         request_auth(options[:email],options[:password])
       end
