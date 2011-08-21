@@ -6,7 +6,7 @@ module GoogleReaderApi
     require "net/https"
     require "uri"
 
-    BASE_URL = "http://www.google.com/reader/"
+    BASE_URL = "https://www.google.com/reader/"
 
     # specify either the :email and :password or the :auth token you got in the past
     #
